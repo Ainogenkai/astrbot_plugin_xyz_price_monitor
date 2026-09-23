@@ -1,0 +1,26 @@
+{
+  "spaceship_api_key": {
+    "description": "Spaceship API Key",
+    "type": "string",
+    "secret": true,
+    "hint": "只需要 domains:read 权限。留空则使用环境变量 SPACESHIP_API_KEY。"
+  },
+  "spaceship_api_secret": {
+    "description": "Spaceship API Secret",
+    "type": "string",
+    "secret": true,
+    "hint": "只需要 domains:read 权限。留空则使用环境变量 SPACESHIP_API_SECRET。"
+  },
+  "check_interval_hours": {
+    "description": "后台检查间隔（小时）",
+    "type": "int",
+    "default": 6,
+    "hint": "建议 1～24 小时；Spaceship 官方接口有明确的请求频率限制。"
+  },
+  "enable_mcp": {
+    "description": "自动注册 MCP 服务器",
+    "type": "bool",
+    "default": true,
+    "hint": "插件启动时把 mcp-server-domainwatch（uvx）注册进 AstrBot 的 MCP 运行时，让 LLM 可通过对话管理监控。首次会自动下载，之后走 uv 缓存。"
+  }
+}

@@ -1,0 +1,24 @@
+[project]
+name = "mcp-server-domainwatch"
+version = "0.0.1"
+description = "MCP server for domain registration price & expiry monitoring (Spaceship + RDAP)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "GPL-3.0-only" }
+keywords = ["mcp", "domain", "monitor", "whois", "rdap", "spaceship", "astrbot"]
+dependencies = [
+    "mcp>=1.29.0,<2",
+]
+
+[project.urls]
+Repository = "https://github.com/Ainogenkai/astrbot_plugin_xyz_price_monitor"
+
+[project.scripts]
+mcp-server-domainwatch = "domainwatch.mcp:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["domainwatch"]

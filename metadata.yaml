@@ -1,0 +1,13 @@
+name: astrbot_plugin_xyz_price_monitor
+display_name: 6位数字 .xyz 价格监控
+short_desc: 监控指定六位数字 .xyz 的 Spaceship 实时注册价、Premium 价格与可用状态。
+desc: 使用 Spaceship 官方 Domain Availability API 监控指定六位数字 .xyz 域名；可获取普通/Registry Premium 注册价格，保存历史，并在价格下降达到 50% 或 67%、或域名从已注册变为可注册时通过 AstrBot 主动通知。插件会自动注册配套的 mcp-server-domainwatch MCP 服务器，支持通过对话（自然语言）管理监控与查询。需要 Spaceship API Key/Secret，建议只授予 domains:read 权限。
+version: 0.0.1
+author: Ainogenkai
+repo: https://github.com/Ainogenkai/astrbot_plugin_xyz_price_monitor
+astrbot_version: ">=4.23.0"
+tags:
+  - 域名监控
+  - 价格监控
+  - MCP
+  - 实用工具

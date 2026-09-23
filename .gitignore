@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+.venv/
+venv/
+
+# 打包产物（zip 通过 Release/市场分发，不进仓库）
+*.zip
+
+# 运行时数据 / 本地配置
+data/
+data.json
+.domainwatch/
+*.tmp
+
+# 编辑器 / 系统
+.idea/
+.vscode/
+.DS_Store
+
+# 密钥
+.env
